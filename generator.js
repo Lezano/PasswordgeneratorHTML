@@ -8,7 +8,7 @@ function generate() {
 
     for (let i = 0; i < length; i++) {
     const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-    char = String.fromCharCode(randomNumber);
+    let char = String.fromCharCode(randomNumber);
     password += char;
     }
     let passwords = JSON.parse(localStorage.getItem("passwords"));
