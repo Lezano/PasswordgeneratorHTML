@@ -1,78 +1,87 @@
+
 body {
-    background: linear-gradient(to bottom, #ff0000, #663399);
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111827;
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 240px;
+    background-color: #1f2937;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    color: #9ca3af;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 16px;
+}
+
+.sidebar a:hover {
+    color: #fff;
+}
+
+.sidebar .user-info {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar .user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar .user-info span {
+    font-size: 14px;
+}
+
+.main-content {
+    flex: 1;
+    background-color: #f9fafb;
+    color: #111827;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    color: white;
 }
 
-h1 {
-    text-align: center;
-    font-size: 3em;
+.main-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    color: #6b7280;
     margin-bottom: 20px;
 }
 
-button {
-    background-color: #4CAF50;
+.main-content .illustration {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.main-content button {
+    background-color: #2563eb;
+    color: #fff;
     border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
-    border-radius: 12px;
-    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #45a049;
-}
-
-input[type="number"] {
-    padding: 10px;
-    margin: 10px 0;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-}
-
-div {
-    margin-top: 20px;
-    font-size: 1.2em;
-}
-
-a {
-    text-decoration: none;
-}
-span{
-    color: white;
-    margin-top: 32px;
-}
-.cat-button{
-    background-color: red;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    transition: background-color 0.3s ease;
-}
-.cat-button:hover {
-    background-color: darkred;
-}
-.grid-container{
-    display: grid;
+.main-content button:hover {
+    background-color: #1d4ed8;
 }
