@@ -1,12 +1,80 @@
-
+/* Allgemeine Einstellungen */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #111827;
     color: #fff;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
-    overflow: hidden;
+}
+
+/* Überschrift */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Eingabefelder */
+input {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #6b7280;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #1f2937;
+    color: #fff;
+}
+
+/* Eingabefelder Hover- und Fokus-Effekt */
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Buttons */
+button {
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Link-Button */
+a button {
+    background-color: #4b5563;
+}
+
+a button:hover {
+    background-color: #374151;
+}
+
+/* Generierter Passwort-Container */
+#password {
+    margin-top: 20px;
+    background-color: #1f2937;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    font-size: 16px;
+    color: #10b981; /* Grüner Text für Passwort */
+    word-break: break-word;
+    display: none; /* Wird nur angezeigt, wenn ein Passwort generiert wurde */
 }
 
 .sidebar {

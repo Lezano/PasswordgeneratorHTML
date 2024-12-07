@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PW Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Sidebar -->
+<div class="sidebar">
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Activities</a>
+        <a href="#">Billing</a>
+        <a href="#">Password Manager</a>
+        <a href="#">My Account</a>
+    </div>
+    <div class="user-info">
+        <img src="https://via.placeholder.com/50" alt="User">
+        <span>Michael Olufemi</span>
+        <span>Olufemi@hotmail.com</span>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="main-content">
+    <h1>PW GENERATOR</h1>
+    <input type="text" placeholder="Username" id="name">
+    <input type="number" placeholder="Length" id="length">
+    <input type="url" placeholder="URL" id="url">
+    <input type="text" placeholder="Notes" id="notes">
+    <button onclick="generate()">Generate</button>
+    <a href="index.html"><button>Home</button></a>
+    <div id="password"></div>
+</div>
+
+<script src="generator.js"></script>
+</body>
+</html>
