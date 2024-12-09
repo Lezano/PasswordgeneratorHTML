@@ -31,7 +31,7 @@ input {
     color: #fff;
 }
 
-/* Eingabefelder Hover- und Fokus-Effekt */
+/* Eingabefelder Effekt */
 input:focus {
     outline: none;
     border-color: #2563eb;
@@ -63,7 +63,7 @@ a button:hover {
     background-color: #374151;
 }
 
-/* Generierter Passwort-Container */
+/* Passwort-Container */
 .password {
     margin-top: 20px;
     background-color: #1f2937;
@@ -182,10 +182,10 @@ th, td {
 
 th {
     background-color: #2563eb; /* Set background color for table headers */
-    color: #fff; /* Set text color for table headers */
+    color: #fff;
 }
 
 td {
-    background-color: #1f2937; /* Set background color for table cells */
-    color: #fff; /* Set text color for table cells */
+    background-color: #1f2937;
+    color: #fff;
 }
