@@ -38,8 +38,9 @@ function getPasswords() {
     }
 
     let table = document.createElement("table");
+    table.id = "passwordTable";
     let headerRow = table.insertRow();
-    headerRow.innerHTML = "<th>URL</th><th>Username</th><th>Password</th><th>Notes</th><th>Action</th>";
+    headerRow.innerHTML = "<th>URL</th><th>Username</th><th>Password</th><th>Notes</th><th>Action</th><th>Delete</th>";
 
     for (let i = 0; i < passwords.length; i++) {
         let row = table.insertRow();
@@ -54,7 +55,37 @@ function getPasswords() {
             navigator.clipboard.writeText(passwords[i].password);
         };
         row.insertCell(4).appendChild(copyButton);
+
+        let deleteButton = document.createElement("button");
+        deleteButton.innerHTML = "Delete";
+        deleteButton.onclick = function () {
+            passwords.splice(i, 1);
+            localStorage.setItem("passwords", JSON.stringify(passwords));
+            row.remove();
+        };
+        row.insertCell(5).appendChild(deleteButton);
     }
 
     document.getElementById("savedPW").appendChild(table);
+}
+
+function filterTable() {
+    let input = document.getElementById("search");
+    let filter = input.value.toLowerCase();
+    let table = document.getElementById("passwordTable");
+    let tr = table.getElementsByTagName("tr");
+
+    for (let i = 1; i < tr.length; i++) {
+        let td = tr[i].getElementsByTagName("td");
+        let match = false;
+        for (let j = 0; j < td.length; j++) {
+            if (td[j]) {
+                if (td[j].innerText.toLowerCase().indexOf(filter) > -1) {
+                    match = true;
+                    break;
+                }
+            }
+        }
+        tr[i].style.display = match ? "" : "none";
+    }
 }

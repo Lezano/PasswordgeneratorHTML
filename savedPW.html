@@ -8,7 +8,10 @@
 <body>
 <script src="generator.js"></script>
 <h1> Your saved Passwords </h1>
-<div id="savedPW"></div>
+<input type="text" id="search" placeholder="Search..." onkeyup="filterTable()">
+<div id="tableContainer">
+    <div id="savedPW"></div>
+</div>
 <script> getPasswords() </script>
 <a href="index.html"><button> Home </button></a>
 </body>

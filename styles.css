@@ -64,7 +64,7 @@ a button:hover {
 }
 
 /* Generierter Passwort-Container */
-#password {
+.password {
     margin-top: 20px;
     background-color: #1f2937;
     padding: 10px;
@@ -152,4 +152,40 @@ a button:hover {
 
 .main-content button:hover {
     background-color: #1d4ed8;
+}
+
+/* Parent Container Styles */
+#savedPW {
+    width: 90%; /* Set the parent container width to 90% of the viewport width */
+    margin: 0 auto; /* Center the parent container horizontally */
+}
+
+/* Scrollable Table Container */
+#tableContainer {
+    max-height: 400px; /* Set the maximum height for the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    width: 100%; /* Ensure the container takes the full width */
+    margin: 20px auto; /* Center the container horizontally */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Set the table width to 100% of the container */
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+th, td {
+    padding: 10px; /* Decrease padding to make the table cells smaller */
+    border: 1px solid #6b7280; /* Add border to table cells */
+    text-align: center;
+}
+
+th {
+    background-color: #2563eb; /* Set background color for table headers */
+    color: #fff; /* Set text color for table headers */
+}
+
+td {
+    background-color: #1f2937; /* Set background color for table cells */
+    color: #fff; /* Set text color for table cells */
 }
