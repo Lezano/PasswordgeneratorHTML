@@ -11,7 +11,7 @@ function generate() {
     if (!url.startsWith("https://")) {
         url = "https://" + url;
     }
-    if (length <= 0 || length > 999) {
+    if (length <= 0 || length > 99) {
 
         return;
     }
