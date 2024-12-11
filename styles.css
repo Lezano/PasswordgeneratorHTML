@@ -7,7 +7,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 100vh;
 }
 
@@ -38,7 +37,7 @@ input:focus {
 }
 
 /* Buttons */
-button {
+.button {
     background-color: #2563eb;
     color: #fff;
     border: none;
@@ -50,7 +49,7 @@ button {
     transition: background-color 0.3s;
 }
 
-button:hover {
+.button:hover {
     background-color: #1d4ed8;
 }
 
@@ -77,43 +76,27 @@ a button:hover {
     display: none; /* Wird nur angezeigt, wenn ein Passwort generiert wurde */
 }
 
-.sidebar {
-    width: 240px;
-    background-color: #1f2937;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-}
 
-.sidebar a {
+.mainMenu a {
     color: #9ca3af;
     text-decoration: none;
     margin-bottom: 20px;
     display: block;
-    font-size: 16px;
+    font-size: 25px;
+    text-align: center;
 }
 
-.sidebar a:hover {
+.mainMenu a:hover {
     color: #fff;
 }
 
-.sidebar .user-info {
+.mainMenu .user-info {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sidebar .user-info img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.sidebar .user-info span {
-    font-size: 14px;
-}
 
 .main-content {
     flex: 1;
@@ -162,7 +145,7 @@ a button:hover {
 
 /* Scrollable Table Container */
 #tableContainer {
-    max-height: 400px; /* Set the maximum height for the container */
+    max-height: 40vh; /* Set the maximum height for the container */
     overflow-y: auto; /* Enable vertical scrolling */
     width: 100%; /* Ensure the container takes the full width */
     margin: 20px auto; /* Center the container horizontally */
@@ -181,6 +164,8 @@ th, td {
 }
 
 th {
+    position: sticky;
+    top : 0;
     background-color: #2563eb; /* Set background color for table headers */
     color: #fff;
 }
@@ -188,4 +173,34 @@ th {
 td {
     background-color: #1f2937;
     color: #fff;
+}
+.note {
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #ffe4e1;
+    color: #c00;
+    border-left: 4px solid #c00;
+    border-radius: 4px;
+}
+.container {
+    justify-content: space-evenly;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+button {
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
 }

@@ -11,7 +11,7 @@ function generate() {
     if (!url.startsWith("https://")) {
         url = "https://" + url;
     }
-    if (length <= 0 || length > 99) {
+    if (length <= 0 || length > 100) {
 
         return;
     }
@@ -110,4 +110,17 @@ document.getElementById("length").onkeyup = (event) => {
     if (event.target.value.length <= 0 || event.target.value.length > 999) {
         event.target.setCustomValidity('Password can´t be longer than 999 and shorter than 1')
     }
+}
+function downloadPasswords() {
+    let passwords = JSON.parse(localStorage.getItem("passwords"));
+    if (passwords == null) {
+        passwords = [];
+    }
+    let dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(passwords));
+    let downloadAnchorNode = document.createElement('a');
+    downloadAnchorNode.setAttribute("href", dataStr);
+    downloadAnchorNode.setAttribute("download", "passwords.json");
+    document.body.appendChild(downloadAnchorNode);
+    downloadAnchorNode.click();
+    downloadAnchorNode.remove();
 }
