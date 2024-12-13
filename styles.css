@@ -1,4 +1,3 @@
-/* Allgemeine Einstellungen */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -10,7 +9,6 @@ body {
     height: 100vh;
 }
 
-/* Überschrift */
 h1 {
     font-size: 36px;
     margin-bottom: 20px;
@@ -18,7 +16,6 @@ h1 {
     text-align: center;
 }
 
-/* Eingabefelder */
 input {
     width: 300px;
     padding: 10px;
@@ -30,13 +27,11 @@ input {
     color: #fff;
 }
 
-/* Eingabefelder Effekt */
 input:focus {
     outline: none;
     border-color: #2563eb;
 }
 
-/* Buttons */
 .button {
     background-color: #2563eb;
     color: #fff;
@@ -53,16 +48,6 @@ input:focus {
     background-color: #1d4ed8;
 }
 
-/* Link-Button */
-a button {
-    background-color: #4b5563;
-}
-
-a button:hover {
-    background-color: #374151;
-}
-
-/* Passwort-Container */
 .password {
     margin-top: 20px;
     background-color: #1f2937;
@@ -71,11 +56,10 @@ a button:hover {
     width: 300px;
     text-align: center;
     font-size: 16px;
-    color: #10b981; /* Grüner Text für Passwort */
+    color: #10b981;
     word-break: break-word;
-    display: none; /* Wird nur angezeigt, wenn ein Passwort generiert wurde */
+    display: none;
 }
-
 
 .mainMenu a {
     color: #9ca3af;
@@ -90,83 +74,33 @@ a button:hover {
     color: #fff;
 }
 
-.mainMenu .user-info {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.main-content {
-    flex: 1;
-    background-color: #f9fafb;
-    color: #111827;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.main-content h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.main-content p {
-    color: #6b7280;
-    margin-bottom: 20px;
-}
-
-.main-content .illustration {
-    width: 150px;
-    margin-bottom: 20px;
-}
-
-.main-content button {
-    background-color: #2563eb;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.main-content button:hover {
-    background-color: #1d4ed8;
-}
-
-/* Parent Container Styles */
 #savedPW {
-    width: 90%; /* Set the parent container width to 90% of the viewport width */
-    margin: 0 auto; /* Center the parent container horizontally */
+    width: 90%;
+    margin: 0 auto;
 }
 
-/* Scrollable Table Container */
 #tableContainer {
-    max-height: 40vh; /* Set the maximum height for the container */
-    overflow-y: auto; /* Enable vertical scrolling */
-    width: 100%; /* Ensure the container takes the full width */
-    margin: 20px auto; /* Center the container horizontally */
+    max-height: 40vh;
+    overflow-y: auto;
+    width: 100%;
+    margin: 20px auto;
 }
 
-/* Table Styles */
 table {
-    width: 100%; /* Set the table width to 100% of the container */
-    border-collapse: collapse; /* Collapse table borders */
+    width: 100%;
+    border-collapse: collapse;
 }
 
 th, td {
-    padding: 10px; /* Decrease padding to make the table cells smaller */
-    border: 1px solid #6b7280; /* Add border to table cells */
+    padding: 10px;
+    border: 1px solid #6b7280;
     text-align: center;
 }
 
 th {
     position: sticky;
-    top : 0;
-    background-color: #2563eb; /* Set background color for table headers */
+    top: 0;
+    background-color: #2563eb;
     color: #fff;
 }
 
@@ -174,6 +108,7 @@ td {
     background-color: #1f2937;
     color: #fff;
 }
+
 .note {
     padding: 15px;
     margin-top: 20px;
@@ -182,25 +117,11 @@ td {
     border-left: 4px solid #c00;
     border-radius: 4px;
 }
+
 .container {
     justify-content: space-evenly;
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-button {
-    background-color: #2563eb;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 10px 5px;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #1d4ed8;
 }

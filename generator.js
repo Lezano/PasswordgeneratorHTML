@@ -63,6 +63,7 @@ function getPasswords() {
 
         let copyButton = document.createElement("button");
         copyButton.innerHTML = "Copy";
+        copyButton.classList.add("button");
         copyButton.onclick = function () {
             navigator.clipboard.writeText(passwords[i].password);
         };
@@ -71,6 +72,7 @@ function getPasswords() {
 
         let deleteButton = document.createElement("button");
         deleteButton.innerHTML = "Delete";
+        deleteButton.classList.add("button");
         deleteButton.style.backgroundColor = "red"
         deleteButton.onclick = function () {
             passwords.splice(i, 1);

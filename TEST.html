@@ -2,38 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PW Generator</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureKeyGen - Password Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #0056b3;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .note {
+            padding: 15px;
+            margin-top: 20px;
+            background-color: #ffe4e1;
+            color: #c00;
+            border-left: 4px solid #c00;
+            border-radius: 4px;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .cta a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .cta a:hover {
+            background-color: #003f8a;
+        }
+    </style>
 </head>
 <body>
-<!-- Sidebar -->
-<div class="sidebar">
-    <div>
-        <a href="#">Home</a>
-        <a href="#">Activities</a>
-        <a href="#">Billing</a>
-        <a href="#">Password Manager</a>
-        <a href="#">My Account</a>
+<div class="container">
+    <h1>SecureKeyGen: Your Truly Offline Password Generator and Manager</h1>
+    <p>Tired of worrying about your passwords being stored on remote servers or vulnerable to online hacks? <strong>SecureKeyGen</strong> is here to provide you with peace of mind!</p>
+
+    <p>With <strong>SecureKeyGen</strong>, all your passwords are generated and managed <strong>entirely offline</strong>, ensuring maximum privacy and security. Your data is stored solely in your browser's <strong>local storage</strong>, meaning it never leaves your device.</p>
+
+    <h2>Why Choose SecureKeyGen?</h2>
+    <ul>
+        <li><strong>True Offline Security:</strong> No internet dependency; your sensitive data stays on your device.</li>
+        <li><strong>Local Storage:</strong> Passwords are stored directly in your browser's secure local storage, not on third-party servers.</li>
+        <li><strong>Convenient Management:</strong> Generate and retrieve strong, unique passwords for all your accounts in seconds.</li>
+    </ul>
+
+    <div class="note">
+        <strong>Important Note:</strong> As <strong>SecureKeyGen</strong> relies on your device's local storage, it’s crucial to back up your data. If you clear your browser's cache or switch devices without exporting your passwords, your saved data will be permanently lost.
     </div>
-    <div class="user-info">
-        <img src="https://via.placeholder.com/50" alt="User">
-        <span>Michael Olufemi</span>
-        <span>Olufemi@hotmail.com</span>
+
+    <div class="cta">
+        <a href="#">Get Started with SecureKeyGen</a>
     </div>
 </div>
-
-<!-- Main Content -->
-<div class="main-content">
-    <h1>PW GENERATOR</h1>
-    <input type="text" placeholder="Username" id="name">
-    <input type="number" placeholder="Length" id="length">
-    <input type="url" placeholder="URL" id="url">
-    <input type="text" placeholder="Notes" id="notes">
-    <button onclick="generate()">Generate</button>
-    <a href="index.html"><button>Home</button></a>
-    <div id="password"></div>
-</div>
-
-<script src="generator.js"></script>
 </body>
 </html>
