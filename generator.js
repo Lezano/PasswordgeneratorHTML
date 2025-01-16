@@ -28,6 +28,7 @@ function generate() {
     document.getElementById("password").innerHTML = "Your personal generated Password is: " + password
     let copyButton = document.createElement("button");
     copyButton.innerHTML = "Copy";
+    copyButton.classList.add("button");
     copyButton.onclick = function () {
         navigator.clipboard.writeText(password)
     };
